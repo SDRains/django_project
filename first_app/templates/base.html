@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{# <!-- Title Name -->  #}{% endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-color: black; color: white;">
+
+<nav class="navbar navbar-default navbar-static-top">
+  <div class=container>
+    <ul class= "nav navbar-nav">
+      <li class="active"><a class="navbar-brand" href="{% url 'home' %}">Home</a></li>
+      <li><a class="navbar-brand" href="">Search</a></li>
+      <li><a class="navbar-brand" href="">Admin</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+<h1>Content:</h1>
+  {% block content %}<!-- Page content   -->{% endblock %}
+</div>
+
+</body>
