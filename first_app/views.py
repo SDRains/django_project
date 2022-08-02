@@ -5,9 +5,9 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
     navBarOptions = {
-        "Home": {"status": "active"},
-        "Search": {"status": ""},
-        "Admin": {"status": ""}
+        "Home": {"status": "active", "url": "index"},
+        "Search": {"status": "", "url": "search"},
+        "Admin": {"status": "", "url": "admin"}
     }
     return render(request, 'home.html', {"first_name": "Stephen", "navbarOptions": navBarOptions})
 
