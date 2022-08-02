@@ -4,13 +4,12 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    names = {"Stephen": "Stephen"}
-    return render(request, 'home.html', context=names)
+    return render(request, 'home.html', {"first_name": "Stephen"})
 
 
-def home(request):
-    return HttpResponse("Welcome to the home page!")
+def search(request):
+    return HttpResponse("Welcome to the search page!")
 
 
-def educative(request):
-    return HttpResponse("Welcome to the educative page!")
+def admin(request):
+    return HttpResponse("Welcome to the admin page!")
