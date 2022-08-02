@@ -3,8 +3,22 @@
 
 {% block title %} Home {% endblock %}
 
+{% block navbar %}
+      <li class="active"><a class="navbar-brand" href="{% url 'index' %}">Home</a></li>
+      <li class=""><a class="navbar-brand" href="{% url 'search' %}">Search</a></li>
+      <li class=""><a class="navbar-brand" href="{% url 'admin' %}">Admin</a></li>
+{% endblock %}
+
 {% block content %}
 
 <h3>Welcome to Home Page, {{ first_name }}</h3>
+
+{% endblock %}
+
+{% block navbarOptions %}
+
+    {% for x in navbarOptions %}
+        <h4>{{ x }}</h4>
+    {% endfor %}
 
 {% endblock %}
