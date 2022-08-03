@@ -16,5 +16,5 @@ def search(request):
     return HttpResponse("Welcome to the search page!")
 
 
-def admin(request):
+def administration(request):
     return HttpResponse("Welcome to the admin page!")

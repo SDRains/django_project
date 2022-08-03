@@ -4,5 +4,5 @@ from first_app import views
 urlpatterns = [
     path('', views.index, name="index"),
     path('search/', views.search, name="search"),
-    path('admin/', views.admin, name="admin"),
+    path('administration/', views.administration, name="administration"),
 ]
